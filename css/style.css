@@ -17,7 +17,7 @@ body{
 
 nav.menu{
     background-color: #272727;
-    height: 55px;
+    height: 70px;
     width: 100%;
     position: sticky;
     top: 0px;
@@ -259,7 +259,7 @@ transition: all 1s;
        .video-1{
         width: 100%;
         height: 100%;
-        padding: 0px 0px 250px 0px;
+        padding: 0px 0px 310px 0px;
        }
 }
 
@@ -270,11 +270,11 @@ transition: all 1s;
 
 .description-panel{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background:linear-gradient(rgba(0,0,0,0.3), 
-    rgba(0,0,0,0.3)), url(/img/flores2.jpg) no-repeat center;
+    rgba(0,0,0,0.3)), url(/img/flores3.jpg) no-repeat center;
     
 }
 .description-panel h3 {
@@ -284,6 +284,8 @@ transition: all 1s;
     font-weight: bolder;
     color:aliceblue;
     margin-top: 40px;
+    
+    
 
 }
 .container {
@@ -344,7 +346,8 @@ transition: all 1s;
 @media  screen and (max-width: 858px) {
   
         .container {
-          width: 100%;}
+          width: 100%;
+        margin-top: 40px;}
         
          .description-panel h3 {
             margin: 20px auto 20px auto;
@@ -364,7 +367,10 @@ transition: all 1s;
           display: none;
         } 
     .description-panel{
-        flex-wrap: wrap;
+        
+        display: flex;
+        flex-direction: column;
+        
     }
     
     .boxdescription{
@@ -391,3 +397,5 @@ transition: all 1s;
         font-family: 'Roboto Mono', monospace;
         font-weight: bolder;
     }
+
+    /* FIN SECCION 3, SLIDER PRODUCTOS */
