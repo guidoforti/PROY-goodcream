@@ -128,8 +128,12 @@ li.nav-item-active a {
 div.imginit{
     height:600px;
     width: 100%;
-    background:linear-gradient(rgba(0,0,0,0.6), 
-    rgba(0,0,0,0.6)), url(/img/imginit2grn.jpg) center no-repeat;
+    background:linear-gradient(rgba(0,0,0,0.3), 
+    rgba(0,0,0,0.3)), url(/img/bosquemasbosque.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -274,7 +278,13 @@ transition: all 1s;
     align-items: center;
     justify-content: center;
     background:linear-gradient(rgba(0,0,0,0.3), 
-    rgba(0,0,0,0.3)), url(/img/flores3.jpg) no-repeat center;
+    rgba(0,0,0,0.3)), url(/img/florverdemaschica.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
     
 }
 .description-panel h3 {
@@ -283,7 +293,7 @@ transition: all 1s;
     font-size: 2.5em;
     font-weight: bolder;
     color:aliceblue;
-    margin-top: 40px;
+    margin:40px 0px 0px 20px;
     
     
 
@@ -307,7 +317,6 @@ transition: all 1s;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
-    
     transition: flex 0.7s ease-in;
     -webkit-transition: all 700ms ease-in;
     
@@ -370,7 +379,7 @@ transition: all 1s;
         
         display: flex;
         flex-direction: column;
-        
+        flex-wrap: wrap;
     }
     
     .boxdescription{
