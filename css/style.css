@@ -6,7 +6,7 @@
 
 body{ 
     font-family: 'Open Sans', sans-serif;
-    background-color: #272727;
+    background-color: rgb(235, 235, 235);
 }
 
 div.separador {
@@ -135,7 +135,7 @@ div.imginit{
     height:600px;
     width: 100%;
     background:linear-gradient(rgba(0,0,0,0.3), 
-    rgba(0,0,0,0.3)), url(/img/bosquemasbosque.jpg);
+    rgba(0,0,0,0.3)), url(/img/erwrwer.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -150,8 +150,8 @@ div.imginit{
 .boxsection1{
 border-radius: 10px;
 width: 50%;
-height: 35%;
-margin: 20% 30px;
+height: 100%;
+
 padding: 0px;
 font-size: 20px;
 
@@ -163,7 +163,7 @@ font-size: 20px;
     font-family: 'PT Sans', sans-serif;
     margin-top: 0px;
     color: antiquewhite;
-    text-shadow: 5px 5px 20px whitesmoke;
+    
 }
 .boxsection1 p{
     color: antiquewhite;
@@ -426,13 +426,10 @@ transition: all 1s;
     .section4{
         width: 100%;
         margin:0px;
-        background:linear-gradient(rgba(0,0,0,0.3), 
-    rgba(0,0,0,0.3)), url(/img/montañas4.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-    border-radius: 5px;
+       background-color:  #272727;
+       display: flex;
+       flex-direction: column;
+    
     }
 
     .container-tit {
@@ -448,12 +445,18 @@ transition: all 1s;
 }
 
 .main-container-cont {
-    border: 2px solid #00d89d;
+    
+    background:linear-gradient(rgba(0,0,0,0.3), 
+    rgba(0,0,0,0.3)), url(/img/montañas4.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
     border-radius: 15px;
     display: flex;
     width: 90%;
     height: 50%;
-    margin: 80px auto 0px auto;
+    margin: 20px auto 20px auto;
     padding-bottom: 20px;
     flex-direction: row;
     justify-content: space-between ;
@@ -486,6 +489,7 @@ transition: all 1s;
      border-radius: 10px;
      padding: 8px;
      color: #00d89d;
+     font-size: 2em;
      font-weight: bolder;
     
 }
@@ -504,15 +508,15 @@ transition: all 1s;
     text-decoration: none;
     text-align: center;
     margin: 10px auto;
-    color: #00d89d;
-    background-color: #272727;
+    color: #272727;
+    background-color: #00d89d;
     padding: 10px;
 }
 
 .btns4:hover{
    
-    background-color: #00d89d;
-    color: #272727;
+    background-color: #272727 ;
+    color:  #00d89d;
     transition: all 1s;
     }
 
@@ -601,7 +605,8 @@ ul {
 
 .contact-wrapper {
     
-    margin: 10px 20px;
+  width: 100%;
+  margin: 0px auto;
     
 }
 
@@ -609,7 +614,8 @@ ul {
 
 .contact-form {
     background:rgba(0, 0, 0, .8);
-    width: 100%;
+    width: 90%;
+    margin: 0px auto 20px auto;
 }
 
 .contact-form form {
@@ -685,6 +691,8 @@ ul {
 /* CONTACT INFO */
 .contact-info {
     background: #000;
+    margin: 0px;
+    width: 100%;
 }
 
 .contact-info ul {
@@ -694,9 +702,10 @@ ul {
     align-items: center;
 }
 .contact-info h4, .contact-info ul, .contact-info p {
-    text-align: center;
+    text-align: left;
     color:aliceblue;
     font-size: 0.8em;
+    padding: 10px 5px;
     
 }
 
@@ -713,7 +722,7 @@ ul {
 }
 p.iconwsp {
     width: 100%;
-    margin: 5px auto;
+    margin: 0px auto;
 }
 .contact-icon-wsp {
     color: #00d89d;
@@ -735,8 +744,12 @@ p.iconwsp {
         display: grid;
         width: 90%;
         grid-template-columns: 2fr 1fr;
-        margin: 0px auto;
+        margin: 20px auto;
 
+    }
+    .contact-form {
+        width: 100%;
+        margin: 0px;
     }
     .contact-form form {
         display:grid;
